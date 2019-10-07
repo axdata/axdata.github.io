@@ -1,4 +1,8 @@
 @charset "utf-8";
+@font-face {
+	font-family: 'axfont';
+	src: url(fonts/MingLiU.ttf);
+}
 
 /*
 =======================
@@ -11,7 +15,7 @@ html, body {
 }
 
 body {
-	font-family: 'MingLiU';
+	font-family: 'axfont';
 	font-size: 16px;
 	color: #a6a79f;
 	background-color: #4c4c4c;
@@ -37,7 +41,7 @@ body {
 }
 
 .p_cw {
-	font-family: 'MingLiU';
+	font-family: 'axfont';
 	font-size: 10px;
 	color: #4c4c4c;
 }
@@ -67,7 +71,7 @@ body {
 
 .sidebar a:link {
 	text-decoration: none;
-	font-family: 'MingLiU';
+	font-family: 'axfont';
 	font-size: 25px;
 	color: #808080;
 	display: block;
@@ -94,7 +98,7 @@ body {
 
 .targeter a:link {
 	text-decoration: none;
-	font-family: 'MingLiU';
+	font-family: 'axfont';
 	color: #a6a79b;
 }
 
@@ -138,7 +142,7 @@ body {
 
 .post a:link {
 	text-decoration: none;
-	font-family: 'MingLiU';
+	font-family: 'axfont';
 	font-size: 24;
 	color: #a6a79b;
 	display: block;
@@ -227,7 +231,7 @@ td:nth-of-type(1) {
 }
 
 input[type="text"], textarea, input[type="submit"] {
-	font-family: 'MingLiU';
+	font-family: 'axfont';
 	font-size: 14px;
 	border: none;
 }
@@ -248,7 +252,7 @@ input[type="submit"]:active {
 }
 
 .thanx {
-	font-family: 'MingLiU';
+	font-family: 'axfont';
 	font-size: 10px;
 	color: #4c4c4c;
 }

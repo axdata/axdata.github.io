@@ -1,4 +1,8 @@
 @charset "utf-8";
+@font-face {
+	font-family: 'axfont';
+	src: url(fonts/MingLiU.ttf);
+}
 
 /*
 =======================
@@ -7,7 +11,7 @@
 */
 
 body {
-	font-family: 'MingLiU', 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'axfont';
 	font-size: 16px;
 	color: #ffffff;
 	background: #000000;
@@ -22,6 +26,6 @@ body {
 
 a:link {
 	text-decoration: none;
-	font-family: 'MingLiU', 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'axfont';
 	color: #ffffff;
 }
