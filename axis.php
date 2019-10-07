@@ -23,7 +23,7 @@ if($_POST["submit"]) {
 	<meta name="author" content="Joao Porto">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ax > web</title>
-	<link href="https://github.com/axdata/axdata.github.io/blob/master/CSS/style.css" rel="stylesheet" type="text/css">
+	<link href="/CSS/axstyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="container">
