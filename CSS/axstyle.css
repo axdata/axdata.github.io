@@ -123,6 +123,8 @@ body {
 
 .worx div {
 	display:none;
+	margin: 64px 0px 0px 100px;
+	white-space: normal;
 }
 
 .worx div:target {
