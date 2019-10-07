@@ -101,6 +101,10 @@ body {
 	font-size: 12px;
 }
 
+.targeter a {
+	word-wrap: break-word;
+}
+
 .targeter a:link {
 	text-decoration: none;
 	font-family: 'axfont', 'MingLiU';
@@ -149,6 +153,10 @@ body {
 
 .post ul li {
 	list-style: none;
+}
+
+.post a {
+	word-wrap: break-word;
 }
 
 .post a:link {
