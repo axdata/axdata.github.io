@@ -99,9 +99,7 @@ body {
 
 .targeter {
 	font-size: 12px;
-}
-
-.targeter a {
+	max-width: 84px;
 	word-wrap: break-word;
 }
 
@@ -155,10 +153,6 @@ body {
 	list-style: none;
 }
 
-.post a {
-	word-wrap: break-word;
-}
-
 .post a:link {
 	text-decoration: none;
 	font-family: 'axfont', 'MingLiU';
@@ -166,6 +160,7 @@ body {
 	color: #a6a79b;
 	display: block;
 	line-height: 22px;
+	word-wrap: break-word;
 }
 
 .post a:hover {
