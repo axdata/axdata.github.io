@@ -32,7 +32,8 @@ body {
 }
 
 .content, .post {
-	margin: 64px 0px 0px 100px;
+	margin: 64px 25px 0px 100px;
+	white-space: normal;
 }
 
 .p_start {
