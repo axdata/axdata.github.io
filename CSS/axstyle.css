@@ -16,7 +16,7 @@ html, body {
 
 body {
 	font-family: 'axfont', 'MingLiU';
-	font-size: 1vw;
+	font-size: 16px;
 	color: #a6a79f;
 	background-color: #4c4c4c;
 }
@@ -32,17 +32,17 @@ body {
 }
 
 .content, .post {
-	margin: 5.3% 0% 0% 10%;
+	margin: 64px 118px 0px 100px;
 }
 
 .p_start {
-	font-size: 1.25vw;
+	font-size: 20px;
 	font-weight: 700;
 }
 
 .p_cw {
 	font-family: 'axfont', 'MingLiU';
-	font-size: 0.62vw;
+	font-size: 10px;
 	color: #4c4c4c;
 }
 
@@ -58,16 +58,11 @@ body {
 	width: 25%;
 	height: 100%;
 	background: url(../images/axmenu.png) no-repeat right top;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
-	background-size: contain;
 }
 
 .sidebar ul {
 	float: right;
-	margin-right: 3.2vw;
-	margin-top: 1.3vw;
+	margin-right: 40px;
 }
 
 .sidebar ul li {
@@ -77,10 +72,10 @@ body {
 .sidebar a:link {
 	text-decoration: none;
 	font-family: 'axfont', 'MingLiU';
-	font-size: 2vw;
+	font-size: 25px;
 	color: #808080;
 	display: block;
-	line-height: 1.95vw;
+	line-height: 22px;
 }
 
 .sidebar a:hover {
@@ -102,7 +97,7 @@ body {
 }
 
 .targeter {
-	font-size: 0.75vw;
+	font-size: 12px;
 }
 
 .targeter a:link {
@@ -156,10 +151,10 @@ body {
 .post a:link {
 	text-decoration: none;
 	font-family: 'axfont', 'MingLiU';
-	font-size: 1.5vw;
+	font-size: 24;
 	color: #a6a79b;
 	display: block;
-	line-height: 1.95vw;
+	line-height: 22px;
 }
 
 .post a:hover {
@@ -188,8 +183,8 @@ body {
 
 .blg_image {
 	display: block;
-	margin-top: 1.5vw;
-	margin-bottom: 1.5vw;
+	margin-top: 24px;
+	margin-bottom: 24px;
 	margin-left: auto;
 	margin-right: auto;
 	height: auto;
@@ -197,7 +192,7 @@ body {
 }	
 
 .img_container {
-	margin-bottom: 1.6vw;
+	margin-bottom: 25px;
 }
 
 .img_description {
@@ -218,16 +213,16 @@ body {
 .vid_wrapper {
 	position: relative;
 	padding-bottom: 56.25%;
-	padding-top: 1.6vw;
-	height: 0vw;
+	padding-top: 25px;
+	height: 0px;
 }
 
 .vid_wrapper iframe {
 	position: absolute;
-	left: 8.3vw;
-	top: 0vw;
-	right: 0vw;
-	bottom: 0vw;
+	left: 100px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
 	height: 80%;
 	width: 80%;
 }
@@ -243,18 +238,18 @@ td {
 }
 
 td:nth-of-type(1) {
-	width: 8.3vw;
+	width:100px;
 	text-align: right;
 }
 
 input[type="text"], textarea, input[type="submit"] {
 	font-family: 'axfont', 'MingLiU';
-	font-size: 0.8vw;
+	font-size: 14px;
 	border: none;
 }
 
 input[type="text"], textarea {
-	width: 15vw;
+	width: 240px;
 	background-color: #4c4c4c;
 	color: #a6a79f;
 }
@@ -270,6 +265,6 @@ input[type="submit"]:active {
 
 .thanx {
 	font-family: 'axfont', 'MingLiU';
-	font-size: 0.6vw;
+	font-size: 10px;
 	color: #4c4c4c;
 }
