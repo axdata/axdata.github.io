@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="media matrices">
+	<meta name="keywords" content="audio, sound, music, stochastic, generative, algorithmic, algorave, electro, concrete, electroacoustic, computation, programming, live, coding, electronics, circuits, visual, video, graphics, matrix">
+	<meta name="author" content="Joao Porto">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ax > web</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<ul>
+				<li><pre><a href="index.html"><br><br>         ax  </a></pre></li>
+				<li><pre><a href="axaud.html">        aud {<br>        -- io</a></pre></li>
+				<li><pre><a href="axlog.html">      } log {<br>    -- arithm</a></pre></li>
+				<li><pre><a href="axcmp.html">      } cmp {<br>   -- utation</a></pre></li>
+				<li><pre><a href="axelc.html">      } elc {<br>   -- tronics</a></pre></li>
+				<li><pre><a href="axgph.html">      } gph {<br>       -- ics</a></pre></li>
+				<li><pre><a href="axis.php">       } is {<br>-- @axaud.net<br><br></a></pre></li>
+				<li><pre><a class="p_cw">© 20XX Joao Porto</a></pre></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="localiser">
+				<h4>ax > cmp</h4>
+				<p class="targeter">&gt; <a href="#projects" class="show_projx">projects/</a></p>
+				<p class="targeter">&gt; <a href="#learning" class="show_learn">learning/</a></p>
+			</div>
+			<div class="content">
+				<div id="projects">
+				<h3>projects</h3>
+				</div>
+				<div id="learning">
+				<h3>learning</h3>
+					<div id="bj21"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="repo/repo.js"></script>
+	<script type='text/javascript'>
+		$('#bj21').repo({ user: 'axcmp', name: 'blackjack21' });
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".show_projx").click(function(){
+				$('#projects').css("display","initial");
+				$('#learning').css("display","none");
+			});
+			$(".show_learn").click(function(){
+				$('#projects').css("display","none");
+				$('#learning').css("display","initial");
+			});
+		});
+	</script>
+</body>
+</html>
