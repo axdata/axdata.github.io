@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-	font-family: 'MingLiU', 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'MingLiU';
 	font-size: 16px;
 	color: #a6a79f;
 	background-color: #4c4c4c;
@@ -37,7 +37,7 @@ body {
 }
 
 .p_cw {
-	font-family: 'MingLiU', 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'MingLiU';
 	font-size: 10px;
 	color: #4c4c4c;
 }
@@ -67,7 +67,7 @@ body {
 
 .sidebar a:link {
 	text-decoration: none;
-	font-family: 'MingLiU', 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'MingLiU';
 	font-size: 25px;
 	color: #808080;
 	display: block;
@@ -94,7 +94,7 @@ body {
 
 .targeter a:link {
 	text-decoration: none;
-	font-family: 'MingLiU', 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'MingLiU';
 	color: #a6a79b;
 }
 
@@ -138,7 +138,7 @@ body {
 
 .post a:link {
 	text-decoration: none;
-	font-family: 'MingLiU', 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'MingLiU';
 	font-size: 24;
 	color: #a6a79b;
 	display: block;
@@ -227,7 +227,7 @@ td:nth-of-type(1) {
 }
 
 input[type="text"], textarea, input[type="submit"] {
-	font-family: 'MingLiU', 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'MingLiU';
 	font-size: 14px;
 	border: none;
 }
@@ -248,7 +248,7 @@ input[type="submit"]:active {
 }
 
 .thanx {
-	font-family: 'MingLiU', 'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: 'MingLiU';
 	font-size: 10px;
 	color: #4c4c4c;
 }
