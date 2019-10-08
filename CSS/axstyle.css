@@ -139,12 +139,9 @@ body {
 =======================
 */
 
-.repo {
-	font-size: 1vw;
-}
-
 #projects, #learning {
 	display: none;
+	font-size: 1vw;
 }
 
 /*
