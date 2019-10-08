@@ -141,8 +141,7 @@ body {
 
 #projects, #learning {
 	display: none;
-	font-family: 'axfont', 'MingLiU';
-	font-size: 1vw;
+	font-size: 0.8vw;
 }
 
 /*
