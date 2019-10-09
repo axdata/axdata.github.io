@@ -7,7 +7,7 @@
 	<meta name="author" content="Joao Porto">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ax > web</title>
-	<link href="/CSS/axstyle.css" rel="stylesheet" type="text/css">
+	<link href="CSS/axstyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="container">
@@ -32,6 +32,24 @@
 			<div class="content">
 				<div id="still">
 					<h3>still</h3>
+<img onerror="
+	var m = document.querySelectorAll('img:not([onerror])'), w = window;
+	for(i = 0; i < m.length; i++)
+		m[i].setAttribute('lazy',
+		m[i].getAttribute('src')),
+		m[i].removeAttribute('src');
+	var lazy = function(){
+		var imgs = document.querySelectorAll('[lazy]');
+		for(i = 0; i < imgs.length; i++){
+			var o = imgs[i], lazy = o.getAttribute('lazy');
+			if(o.y <= (w.screen.height + w.scrollY + 50) && o.y >= (w.scrollY - 50)){
+				o.setAttribute('src', lazy);
+				o.removeAttribute('lazy');
+			}
+		}
+	}
+	w.onload =  w.onscroll = lazy;
+" src/>
 					<a href="images/still/068.jpg"><img height=25% width=25% src="images/still/068.jpg" alt="still image"></a>
 					<a href="images/still/067.jpg"><img height=50% width=50% src="images/still/067.jpg" alt="still image"></a>
 					<a href="images/still/066.jpg"><img height=50% width=50% src="images/still/066.jpg" alt="still image"></a>
