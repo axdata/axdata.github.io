@@ -1,7 +1,10 @@
 @charset "utf-8";
 @font-face {
-font-family: 'axfont';
-src: url(fonts/MingLiU.ttf);
+    font-family: 'source_code_proregular';
+    src: url(fonts/sourcecodepro-regular-webfont.woff2) format('woff2'),
+         url(fonts/sourcecodepro-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*
@@ -12,11 +15,12 @@ src: url(fonts/MingLiU.ttf);
 
 html, body {
 height: 100%;
+letter-spacing:1px;
 }
 
 body {
-font-family: 'axfont', 'MingLiU';
-font-size: 16px;
+font-family: 'source_code_proregular';
+font-size: 14px;
 color: #a6a79f;
 background-color: #4c4c4c;
 }
@@ -32,7 +36,7 @@ width: 75%;
 }
 
 .content, .post {
-	margin: 64px 25px 0px 100px;
+	margin: 64px 25px 0px 120px;
 	white-space: normal;
 }
 
@@ -42,7 +46,6 @@ width: 75%;
 }
 
 .p_cw {
-	font-family: 'axfont', 'MingLiU';
 	font-size: 10px;
 	color: #4c4c4c;
 }
@@ -59,6 +62,7 @@ width: 75%;
 	width: 25%;
 	height: 100%;
 	background: url(../images/axmenu.png) no-repeat right top;
+	letter-spacing:1px;
 }
 
 .sidebar ul {
@@ -72,11 +76,10 @@ width: 75%;
 
 .sidebar a:link {
 	text-decoration: none;
-	font-family: 'axfont', 'MingLiU';
-	font-size: 25px;
+	font-size: 20px;
 	color: #808080;
 	display: block;
-	line-height: 22px;
+	line-height: 23px;
 }
 
 .sidebar a:hover {
@@ -99,13 +102,12 @@ width: 75%;
 
 .targeter {
 	font-size: 12px;
-	max-width: 84px;
+	max-width: 120px;
 	word-wrap: break-word;
 }
 
 .targeter a:link {
 	text-decoration: none;
-	font-family: 'axfont', 'MingLiU';
 	color: #a6a79b;
 }
 
@@ -125,7 +127,7 @@ width: 75%;
 
 .worx div {
 	display:none;
-	margin: 64px 0px 0px 100px;
+	margin: 64px 0px 0px 120px;
 	white-space: normal;
 }
 
@@ -159,8 +161,6 @@ width: 75%;
 
 .post a:link {
 	text-decoration: none;
-	font-family: 'axfont', 'MingLiU';
-	font-size: 14px;
 	color: #a6a79b;
 	display: block;
 	line-height: 22px;
@@ -270,7 +270,6 @@ td:nth-of-type(1) {
 }
 
 input[type="text"], textarea, input[type="submit"] {
-	font-family: 'axfont', 'MingLiU';
 	font-size: 14px;
 	border: none;
 }
@@ -291,7 +290,6 @@ input[type="submit"]:active {
 }
 
 .thanx {
-	font-family: 'axfont', 'MingLiU';
 	font-size: 10px;
 	color: #4c4c4c;
 }
