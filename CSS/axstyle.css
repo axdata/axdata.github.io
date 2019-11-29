@@ -1,10 +1,11 @@
 @charset "utf-8";
 @font-face {
     font-family: 'source_code_proregular';
+    font-style: normal;
+    font-weight: normal;
     src: url(fonts/sourcecodepro-regular-webfont.woff2) format('woff2'),
          url(fonts/sourcecodepro-regular-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-display: fallback;
 }
 
 /*
