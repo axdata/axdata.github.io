@@ -1,20 +1,4 @@
-<!--<?php
-
-if($_POST["submit"]) {
-$recipient="is@axaud.net";
-$subject="New message from contact form";
-$sender=$_POST["sender"];
-$senderEmail=$_POST["senderEmail"];
-$message=$_POST["message"];
-
-$mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-$whiteRabbit="<li><pre><a class='thanx'>Your message has been sent.</a></pre></li>";
-}
-
-?>//--><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -42,26 +26,13 @@ $whiteRabbit="<li><pre><a class='thanx'>Your message has been sent.</a></pre></l
 		</div>
 		<div class="main">
 			<div class="localiser">
-				<h4> ax > [is @ axaud.net]</h4>
+				<h4> ax > is </h4>
+				<p class="targeter">&gt; contact/</p>
 			</div>
 			<div class="content">
-				<form method="post" action="axis.php">
-					<table>
-						<tr>
-							<td><input type="text" placeholder="&lt; n a m e &gt;" name="sender"></td>
-						</tr>
-						<tr>
-							<td><input type="text" placeholder="&lt; y o u r @ e . m a i l &gt;" name="senderEmail"></td>
-						</tr>
-						<tr>
-							<td><textarea rows="6" placeholder="&lt; m e s s a g e &gt;" name="message"></textarea></td>
-						</tr>
-						<tr>
-							<td><input type="submit" value="send" name="submit"></td>
-						</tr>
-					</table>
-				</form>	
-				<!--<?=$whiteRabbit ?>//-->
+				<div>
+				<img src="/images/is.jpg" alt="contact" height="30" width="150">
+				</div>
 			</div>
 		</div>
 	</div>
