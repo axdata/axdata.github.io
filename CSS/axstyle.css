@@ -156,6 +156,10 @@ width: 75%;
 =======================
 */
 
+.post_entry {
+	line-height: 22px;
+}
+
 .post ul li {
 	list-style: none;
 }
@@ -163,8 +167,6 @@ width: 75%;
 .post a:link {
 	text-decoration: none;
 	color: #899fad;
-	/*display: block;*/
-	line-height: 22px;
 	word-wrap: break-word;
 }
 
