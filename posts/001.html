@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="experience ax">
+	<meta name="keywords" content="audio, sound, music, records, stochastic, generative, algorithmic, algorave, electro, idm, breaks, concrete, electroacoustic, computation, programming, live, coding, electronics, circuits, visual, video, graphics, matrix">
+	<meta name="author" content="Joao Porto">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ax > web</title>
+	<link href="/../CSS/axstyle.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="https://www.axaud.net/favicon.ico">
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<ul>
+				<li><pre><a href="../index.html"><br><br>         ax</a></pre></li>
+				<li><pre><a href="../axaud.html">        aud {<br>        -- io</a></pre></li>
+				<li><pre><a href="../axlog.html">      } log {<br>    -- arithm</a></pre></li>
+				<li><pre><a href="../axcmp.html">      } cmp {<br>   -- utation</a></pre></li>
+				<li><pre><a href="../axelc.html">      } elc {<br>   -- tronics</a></pre></li>
+				<li><pre><a href="../axgph.html">      } gph {<br>       -- ics</a></pre></li>
+				<li><pre><a href="../axis.html">       } is {<br>-- @axaud.net<br><br></a></pre></li>
+				<li><pre><a class="p_cw">© 20XX Joao Porto</a></pre></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="localiser">
+				<h4>ax > log</h4>
+				<p class="targeter">$ <a href="../axlog.html">ls</a></p>
+			</div>
+			<div class="post">
+				<!--<div class="img_container">
+					<img src="../images/2jh9.jpg" alt="origin" class="blg_image">
+					<div class="img_description">
+					<p>this is a test</p>
+				</div>-->
+				<pre><p>00101032020</p></pre>
+			<p><span class="p_start">Was in the Sheffield where I ate some jazz apples from New Zealand...</span></p>
+
+
+			<picture>
+			    <source srcset="../images/axlog/bt_jazz_apples2.jpg" media="(min-width: 1200px)">
+			    <source srcset="../images/axlog/mt_jazz_apples2.jpg" media="(min-width: 700px)">
+			    <source srcset="../images/axlog/st_jazz_apples2.jpg" media="(min-width: 300px)">
+			    <img src="../images/axlog/mt_jazz_apples2.jpg" alt="axlog" align="left" style="padding: 7.5px 10px 0px 0px" />
+			</picture>
+			<!--
+			<picture>
+			    <source srcset="../images/axlog/bt_jazz_apples1.jpg" media="(min-width: 1200px)">
+			    <source srcset="../images/axlog/mt_jazz_apples1.jpg" media="(min-width: 700px)">
+			    <source srcset="../images/axlog/st_jazz_apples1.jpg" media="(min-width: 300px)">
+			    <img src="../images/axlog/mt_jazz_apples1.jpg" alt="axlog" />
+			</picture>
+			-->
+
+			<p>and also attended the <a href="https://livecode-summerschool.github.io">Live Code Summer School 2019</a>, where courses in <a href="https://foxdot.org">FoxDot</a> by <a href="https://ryan-kirkbride.github.io">Ryan Kirkbride</a>, <a href="https://ojack.github.io/articles/hydra/index.html">Hydra</a> by <a href="https://ojack.github.io">Olivia Jack</a> and <a href="https://tidalcycles.org">TidalCycles</a> by <a href="https://slab.org">Alex McLean</a> and <a href="https://heavy-lifting.org">Lucy Cheesman</a> were ministered.</p>
+
+			<p>I took an introduction course in Hydra and a more extensive one in TidalCycles. The courses were great, very well structured, timing well managed, the provided documentation very clear and DINA’s environment well suited for the courses, the displaced frames of mirrors and paintings there somehow made me feel more in place.</p>
+
+			<p>Regarding my first performance live coding at the end-of-term party, well I wasn’t thrown tomatoes but it probably wasn’t as good as Opeth's first concert. I usually think that it’s best to leave certain things open to interpretation, but since mistakes were also a major part of this performance, i’ll extend the mistake here by sharing my thoughts on it…</p>
+
+			<p>Before the performance my mind was dabbling on this concept of “primordial tides of sludge” while my mind itself was feeling a little bit “murky”, with all the functions we had covered and all the overwhelming possibilities, so I decided to pull something out of that… What a better way to start than by using the very first line of code, a “Hello World” for Tidal:</p>
+
+			<pre><p class="code">d1 $ s “bd”</p></pre>
+
+			<p>Given that, as a starting point, there’s a whole sphere of possible directions to follow, I decided to follow on a desire, which I had expressed during class, which was to extend on the duration of a sound, by using time stretching. For this I tried using the loopAt and chop functions, usually used to stretch and adjust long samples, I reckon:</p>
+
+			<pre><p class="code">d1 $ loopAt (range 0.5 2 rand) $ chop 32 $  s "bd"</p></pre>
+
+			<p>To make this sound something more akin to a primordial sludge, with gaseous effervescent bubbles emerging and popping out of it, rand values contained within a range of 0.5 and 2, which where the dimensions for the simulated crater that lodged the sludge, were used. At this point I heard Alex, from close to DINA’s bar counter:</p>
+
+			<p>- It is raining!</p>
+			<p>- Oh no! - I think I thought - It’s coming from the ceiling, it should be coming from the floor.</p>
+
+			<p>A drum conundrum… sludge everywhere.</p>
+
+			<p>When Alex first asked if I was going to perform, I had actually said no and keeping up with the spirit of predictability and incoherence, “John” went in my place. I had spliced my self, I needed to slow down (“step back” from the performance, like Lucy said in class) and regress to some familiar structure that I could hold onto, so I decided to try and use some of my custom made “ax” samples and kind of like a child using a shape sorter I spent sometime trying to fit samples onto a pattern.</p>
+
+			<pre><p class="code">d2 $ slow 4<br>   $ s "[ax:? ~ hh, hh hh hh:2]"<br>   # cut  1</p></pre>
+
+			<p>Like a baby I was making a big mess. Yet, just like Lucy had said, “…put the fun back into function”, I decided to take some of the lucidity out of Lucy and direct the theme of the performance to the very topic, brought about during lecture, on how to address a performance with “improvisation vs using a pre-existing structure”, so I opened another window in Vim (in addition to the memory aid with a list of sample names, like Lucy had also suggested, albeit on paper) and swapped into using some of the function bodies that I had been sketching over time, e.g.:</p>
+
+			<pre><p class="code">setcps 0.58<br>                                                                                     
+-- beat<br>
+d3 $ n "~ [7 5 12 24 7 7 5 1 12] 5" # s "reaktor" # midichan 0 # gain 1.2<br>                                           
+d4 $ n "&lte4 d4 a4 &ltg3 [b4*2 &ltg4 a5 &gt]&gt&gt" # s "midi" # midichan 0 # gain 0.5<br>                                         
+d4 $ n "&lte4 d4 a4 &ltg3 [b4*2 g4]&gt&gt" # s "midi" # midichan 0 # gain 0.5<br>                                               
+-- d3 $ n "[a5 c5 e5 e5 g5]" # s "reaktor" # midichan 0 # gain 1<br>                                                    
+d5 $ n "e4 &lte4 [g4 e4 g3]&gt" # s "iac" # midichan 0 # gain 1<br>                                                         
+d6 $ s "[[sn:4  ~]*2 , [cp ~ ]*2]" # speed (1.8) # gain 1.2<br>                                                         
+d1 $ s "[808bd:6([5 3 3 3]/4,8,1), drum(3,8,6), &ltdrum:2(6,8,4) drum:2(5,8,5)&gt drum:2(6,8,3)]" # gain 1.2<br>            
+d9 $ s "&lt [808oh:5*1 ~](8,2,5) 808oh:5(6,8,4) 808oh:5(6,8,4)&gt &lt[808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1   808oh:5*1 808oh:5*1 808oh:5*1] 808oh:5(6,8,4)&gt]" # speed 1 # gain 0.9125<br>                                            
+d8 $ s "&lt 808oh:5(6,8,4) [808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1] 808oh:   5(6,8,4)&gt &lt[808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1] 808oh:5(6,8,4)&gt]"
+   # speed 1 # gain 0.9125</p></pre>
+
+			<p>To be on par with the configuration used at the summer school, I had decided to use the default tidal boot configuration, thus bypassing my personal orbit and MIDI configurations at the time, which made for some interesting decisions, leading me to follow along different bodies of code as if they were just one and coming across errors for MIDI devices that weren’t recognised, so I had to regress even further and resort to using some “primordial melodic tidal samples”, mainly “arpy”.</p>
+
+			<p>I $ sometimes (maybe $ often) like to take a grasp at the edge of things while experimenting, and Tidal due to its much less boundary stricken nature than other means I have used, is simply great at that, in this case, </p>
+
+			<pre><p class="code">d5 $ "~ &lt808bd:1 [~ [~ [808bd:1 808bd:1](1.1,1.11111,2)]]&gt"<br>
+d3 $ "~ &ltcp [~ [~ [cp cp](1.1,1.111111,2)]]&gt"</p></pre>
+
+			<p>which opens the door to using latency glitching as a technique of expressiveness as well, as can be heard at 10:41 of the performance, i.e. an idle holding moment followed by a bursting resolution:</p>
+
+			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/739690219&color=%23a6a79b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+			<p>Getting back on the topic of “improvisation vs using a pre-existing structure”…</p>
+
+			<p>When I relate to sound, structure is a very important part of it, not structure in the sense of progression over time, but kind of like the matrix of patterns that emerges with repetition, this being one of the many reasons that makes TidalCycles’s approach so compelling to me music making-wise. I have a strong visual sense of sound (though less intense now than in the past) and tend to approach music as perhaps an architect would a building. I understand the value of a musician who has mastered an instrument and has turned it into an extension of his expression, yet I am also very drawn to the perspective of a sound crafted structure, which gains life through whatever interaction happens while navigating through it, meaning the dialog that develops between the piece and the entities, which for a while happen to inhabit its environment and all the possible stances, going from being just a mere observer from a distance, yet still holding an effect (like the double slit experiment), to the other extreme of “completely” merging with a piece and having some sort of transformation, satori, eureka or of course every other possibility in-between.</p>
+
+			<p>I had fleas while writing this and my cat too.</p>
+
+			<p>So taking on the frame of mind of a flea circus, the circus being the already made structure and the fleas the values, which are given as the arguments for the desired parameters, the livecoder can be akin to a virtual flea trainer.</p>
+
+			<p>See Flea Circus tent installation by Maria Fernanda Cardoso, for further elucidation:</p>
+			<div style="padding:80% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/6296955?color=a6a79b&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+			<p><a href="https://vimeo.com/6296955">Cardoso Flea Circus Video</a> from <a href="https://vimeo.com/user1579520">Maria Fernanda Cardoso + Harley</a> on <a href="https://vimeo.com">Vimeo</a>.</p> <br>
+
+			<p>While this is a metaphor for relying on structure for a performance, there’s likewise the opposite which is improvising or making something from scratch, that is something I’ve witnessed on the #patternuary which has been happening on twitter and youtube and I admire it, as the result feels naturally to me like a mixture of both pure machine language and primitive drumming woven together.</p>
+
+			<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">today&#39;s pattern (055) <a href="https://twitter.com/hashtag/tidalcycles?src=hash&amp;ref_src=twsrc%5Etfw">#tidalcycles</a> <a href="https://twitter.com/hashtag/livecoding?src=hash&amp;ref_src=twsrc%5Etfw">#livecoding</a> <a href="https://t.co/80sYGtnE6a">pic.twitter.com/80sYGtnE6a</a></p>&mdash; hiroki (@hisoyaca7oto) <a href="https://twitter.com/hisoyaca7oto/status/1223278610116567040?ref_src=twsrc%5Etfw">January 31, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Reached the 9th <a href="https://twitter.com/hashtag/jamuary?src=hash&amp;ref_src=twsrc%5Etfw">#jamuary</a>! Freshening things up a bit with something from-scratch and clappy, within the beautiful creative contraints of the 2m20s twitter video limit.. <a href="https://t.co/RLHWvvmVPQ">pic.twitter.com/RLHWvvmVPQ</a></p>&mdash; Alex McLean (@yaxu) <a href="https://twitter.com/yaxu/status/1215252865918423045?ref_src=twsrc%5Etfw">January 9, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+			<p>Brings things to mind...</p>
+
+			<div class="vid_wrapper"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mLzTII1O_Lc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<div class="vid_wrapper"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c73wJEDc3R8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<div class="vid_wrapper"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7uxZ3gcX5rg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<div class="vid_wrapper"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nY1DNZRDXYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<div class="vid_wrapper"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/F5vvMsj24kE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			
+			<p>Yet, during my performance I wanted to improvise something to sound like it was coming from the ground when it was like:</p>
+			
+			<div class="vid_wrapper"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-hjU2GCKx4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+			<p>And well at a certain point, it did happen to come from the ground, the latency technique manifested itself in reality, while back in Portugal, coming out in bursts, reaching the point of a pipe rupture… </p>
+
+			<p>After I came back to the Azores, I spent sometime processing what would emerge as Almond Yeggs, a collaboration with Bjørn Maghildøen a.k.a noemata. Bjørn, who in my mind is the king of glitch, had sent me some audio data and at the time had opened Very Large Works submissions for The Wrong, which resulted in a ©©©©©©©ore dump.</p>
+
+			<p>It was after sending him my part of the processing that I felt an idle holding moment, calm, silent… this marked the touchdown of Lorenzo on the 23rd of September 2019, as if mirroring on "primordial tides of sludge", then it was Hagebis on the other side hitting Japan and then the floods in Sheffield. It seemed as if where I was or didn’t mind being at the time was being hit by the thoughts for the performance that night at DINA. When the floods hit Sheffield in the beginning of November of 2019 I believe, I learned about the Great Sheffield Flood, that occurred on 11 March 1864 and then megatron…</p>
+
+			<p>I could go on, but I heard somewhere that size is the enemy of alpha and so this log entry finishes with bWVnYXRyb24=, the last track of my last album d2FycGVkIHVwIGluIHBsYXN0aWM=, which I had been processing in the background, thus the reason for many late and skipped jams when I late joined the #jamuary  #patternuary of 2020, which I first learned from @yaxu on twitter, thus the reason for throwing a #latejamuary instead.</p>
+
+			<p>This album marks my transition from DAW-only into DAW+livecoding and its tracks oscillate between these two approaches for sequencing in general.</p>
+
+			<p>Although I love the sound of analog, I think in the end having to take a more minimalist digital route and discovering livecoding turned out to be much more beneficial as things tend to get more d2FycGVkIHVwIGluIHBsYXN0aWM= and as time passes I grow more and more fond of what was happenning many years ago when there was no music at all.</p>
+
+			<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=40717601/size=large/bgcol=333333/linkcol=a6a79f/tracklist=false/artwork=small/track=1109273597/transparent=true/" seamless><a href="http://axaud.bandcamp.com/album/d2fycgvkihvwigluihbsyxn0awm">d2FycGVkIHVwIGluIHBsYXN0aWM= by axaud</a></iframe>
+			Seven months have passed since the LCSS, meanwhile there was ICLC... would take another seven months and a hang after that to generate a log for no one to read, it was nice to meet Francisco and Rafaele again and come across others like Robin, Ulysses, Giovanni, Joana, Alejandro, Dragitza (I hope I'm writting your name right), was hoping to see Alessandro and Helen, Michael-Jon, Pat, Emma, Sebastian... #latelog.  <br> <br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

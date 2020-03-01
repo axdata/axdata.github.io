@@ -162,8 +162,8 @@ width: 75%;
 
 .post a:link {
 	text-decoration: none;
-	color: #a6a79b;
-	display: block;
+	color: #899fad;
+	/*display: block;*/
 	line-height: 22px;
 	word-wrap: break-word;
 }
@@ -174,6 +174,12 @@ width: 75%;
 
 .post a:visited {
 	color: #a6a79b;
+}
+
+.code {
+	border: 1px solid #a6a79b;
+	padding-left: 5px;
+	word-wrap: break-word;
 }
 
 /*
@@ -247,10 +253,10 @@ picture.lazy img {
 
 .vid_wrapper iframe {
 	position: absolute;
-	left: 100px;
+	left: 0px;
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
-	height: 80%;
-	width: 80%;
+	height: 100%;
+	width: 100%;
 }
