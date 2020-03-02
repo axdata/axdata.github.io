@@ -37,12 +37,12 @@
 				<p>Before the performance my mind was dabbling on this concept of “primordial tides of sludge” while my mind itself was feeling a little bit “murky”, with all the functions we had covered and all the overwhelming possibilities, so I decided to pull something out of that… What a better way to start than by using the very first line of code, a “Hello World” for Tidal:</p>
 				<br>
 				<div class="code">
-				<pre><p>d1 $ s “bd”</p></pre>
+				<p>d1 $ s “bd”</p>
 				</div>
 
 				<p>Given that, as a starting point, there’s a whole sphere of possible directions to follow, I decided to follow on a desire, which I had expressed during class, which was to extend on the duration of a sound, by using time stretching. For this I tried using the loopAt and chop functions, usually used to stretch and adjust long samples, I reckon:</p>
 				<div class="code">
-				<pre><p>d1 $ loopAt (range 0.5 2 rand) $ chop 32 $  s "bd"</p></pre>
+				<p>d1 $ loopAt (range 0.5 2 rand) $ chop 32 $  s "bd"</p>
 				</div>
 
 				<p>To make this sound something more akin to a primordial sludge, with gaseous effervescent bubbles emerging and popping out of it, rand values contained within a range of 0.5 and 2, which where the dimensions for the simulated crater that lodged the sludge, were used. At this point I heard Alex, from close to DINA’s bar counter:</p>
@@ -54,7 +54,7 @@
 
 				<p>When Alex first asked if I was going to perform, I had actually said no and keeping up with the spirit of predictability and incoherence, “John” went in my place. I had spliced my self, I needed to slow down (“step back” from the performance, like Lucy said in class) and regress to some familiar structure that I could hold onto, so I decided to try and use some of my custom made “ax” samples and kind of like a child using a shape sorter I spent sometime trying to fit samples onto a pattern.</p>
 				<div class="code">
-				<pre><p>d2 $ slow 4<br>   $ s "[ax:? ~ hh, hh hh hh:2]"<br>   # cut  1</p></pre>
+				<p>d2 $ slow 4<br>   $ s "[ax:? ~ hh, hh hh hh:2]"<br>   # cut  1</p>
 				</div>
 
 				<p>Like a baby I was making a big mess. Yet, just like Lucy had said, “…put the fun back into function”, I decided to take some of the lucidity out of Lucy and direct the theme of the performance to the very topic, brought about during lecture, on how to address a performance with “improvisation vs using a pre-existing structure”, so I opened another window in Vim (in addition to the memory aid with a list of sample names, like Lucy had also suggested, albeit on paper) and swapped into using some of the function bodies that I had been sketching over time, e.g.:</p>
@@ -78,8 +78,8 @@
 
 				<p>I $ sometimes (maybe $ often) like to take a grasp at the edge of things while experimenting, and Tidal due to its much less boundary stricken nature than other means I have used, is simply great at that, in this case, </p>
 				<div class="code">
-				<pre><p>d5 $ "~ &lt808bd:1 [~ [~ [808bd:1 808bd:1](1.1,1.11111,2)]]&gt"<br>
-	d3 $ "~ &ltcp [~ [~ [cp cp](1.1,1.111111,2)]]&gt"</p></pre>
+				<p>d5 $ "~ &lt808bd:1 [~ [~ [808bd:1 808bd:1](1.1,1.11111,2)]]&gt"<br>
+	d3 $ "~ &ltcp [~ [~ [cp cp](1.1,1.111111,2)]]&gt"</p>
 				</div>
 
 				<p>which opens the door to using latency glitching as a technique of expressiveness as well, as can be heard at 10:41 of the performance, i.e. an idle holding moment followed by a bursting resolution:</p>
