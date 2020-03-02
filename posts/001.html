@@ -36,12 +36,14 @@
 
 				<p>Before the performance my mind was dabbling on this concept of “primordial tides of sludge” while my mind itself was feeling a little bit “murky”, with all the functions we had covered and all the overwhelming possibilities, so I decided to pull something out of that… What a better way to start than by using the very first line of code, a “Hello World” for Tidal:</p>
 				<br>
-
-				<pre><p class="code">d1 $ s “bd”</p></pre>
+				<div class="code">
+				<pre><p>d1 $ s “bd”</p></pre>
+				</div>
 
 				<p>Given that, as a starting point, there’s a whole sphere of possible directions to follow, I decided to follow on a desire, which I had expressed during class, which was to extend on the duration of a sound, by using time stretching. For this I tried using the loopAt and chop functions, usually used to stretch and adjust long samples, I reckon:</p>
-
-				<pre><p class="code">d1 $ loopAt (range 0.5 2 rand) $ chop 32 $  s "bd"</p></pre>
+				<div class="code">
+				<pre><p>d1 $ loopAt (range 0.5 2 rand) $ chop 32 $  s "bd"</p></pre>
+				</div>
 
 				<p>To make this sound something more akin to a primordial sludge, with gaseous effervescent bubbles emerging and popping out of it, rand values contained within a range of 0.5 and 2, which where the dimensions for the simulated crater that lodged the sludge, were used. At this point I heard Alex, from close to DINA’s bar counter:</p>
 
@@ -51,12 +53,14 @@
 				<p>A drum conundrum… sludge everywhere.</p>
 
 				<p>When Alex first asked if I was going to perform, I had actually said no and keeping up with the spirit of predictability and incoherence, “John” went in my place. I had spliced my self, I needed to slow down (“step back” from the performance, like Lucy said in class) and regress to some familiar structure that I could hold onto, so I decided to try and use some of my custom made “ax” samples and kind of like a child using a shape sorter I spent sometime trying to fit samples onto a pattern.</p>
-
-				<pre><p class="code">d2 $ slow 4<br>   $ s "[ax:? ~ hh, hh hh hh:2]"<br>   # cut  1</p></pre>
+				<div class="code">
+				<pre><p>d2 $ slow 4<br>   $ s "[ax:? ~ hh, hh hh hh:2]"<br>   # cut  1</p></pre>
+				</div>
 
 				<p>Like a baby I was making a big mess. Yet, just like Lucy had said, “…put the fun back into function”, I decided to take some of the lucidity out of Lucy and direct the theme of the performance to the very topic, brought about during lecture, on how to address a performance with “improvisation vs using a pre-existing structure”, so I opened another window in Vim (in addition to the memory aid with a list of sample names, like Lucy had also suggested, albeit on paper) and swapped into using some of the function bodies that I had been sketching over time, e.g.:</p>
-
-				<pre><p class="code">setcps 0.58<br>                                                                                     
+				
+				<div class="code">
+				<pre><p>setcps 0.58<br>                                                                                     
 	-- beat<br>
 	d3 $ n "~ [7 5 12 24 7 7 5 1 12] 5" # s "reaktor" # midichan 0 # gain 1.2<br>                                           
 	d4 $ n "&lte4 d4 a4 &ltg3 [b4*2 &ltg4 a5 &gt]&gt&gt" # s "midi" # midichan 0 # gain 0.5<br>                                         
@@ -68,13 +72,15 @@
 	d9 $ s "&lt [808oh:5*1 ~](8,2,5) 808oh:5(6,8,4) 808oh:5(6,8,4)&gt &lt[808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1   808oh:5*1 808oh:5*1 808oh:5*1] 808oh:5(6,8,4)&gt]" # speed 1 # gain 0.9125<br>                                            
 	d8 $ s "&lt 808oh:5(6,8,4) [808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1] 808oh:   5(6,8,4)&gt &lt[808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1 808oh:5*1] 808oh:5(6,8,4)&gt]"
 	   # speed 1 # gain 0.9125</p></pre>
+				</div>
 
 				<p>To be on par with the configuration used at the summer school, I had decided to use the default tidal boot configuration, thus bypassing my personal orbit and MIDI configurations at the time, which made for some interesting decisions, leading me to follow along different bodies of code as if they were just one and coming across errors for MIDI devices that weren’t recognised, so I had to regress even further and resort to using some “primordial melodic tidal samples”, mainly “arpy”.</p>
 
 				<p>I $ sometimes (maybe $ often) like to take a grasp at the edge of things while experimenting, and Tidal due to its much less boundary stricken nature than other means I have used, is simply great at that, in this case, </p>
-
-				<pre><p class="code">d5 $ "~ &lt808bd:1 [~ [~ [808bd:1 808bd:1](1.1,1.11111,2)]]&gt"<br>
+				<div class="code">
+				<pre><p>d5 $ "~ &lt808bd:1 [~ [~ [808bd:1 808bd:1](1.1,1.11111,2)]]&gt"<br>
 	d3 $ "~ &ltcp [~ [~ [cp cp](1.1,1.111111,2)]]&gt"</p></pre>
+				</div>
 
 				<p>which opens the door to using latency glitching as a technique of expressiveness as well, as can be heard at 10:41 of the performance, i.e. an idle holding moment followed by a bursting resolution:</p>
 
@@ -86,7 +92,7 @@
 
 				<p>I had fleas while writing this and my cat too.</p>
 
-				<p>So taking on the frame of mind of a flea circus, the circus being the already made structure and the fleas the values, which are given as the arguments for the desired parameters, the livecoder can be akin to a virtual flea trainer.</p>
+				<p>So taking on the frame of mind of a flea circus, the circus being the already made structure and the fleas the values, which are given as the arguments for the desired p>
 
 				<p>See Flea Circus tent installation by Maria Fernanda Cardoso, for further elucidation:</p>
 				<div style="padding:80% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/6296955?color=a6a79b&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
